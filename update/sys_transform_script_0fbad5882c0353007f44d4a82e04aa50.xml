@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <map display_value="u_imp_saml_user_7xw95ypsxa">07bad5882c0353007f44d4a82e04aa48</map>
+        <order>100</order>
+        <script><![CDATA[// create first name if neccessary
+if (source.first_name.nil())
+    target.first_name = source.user_name;
+]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-27 08:09:48</sys_created_on>
+        <sys_id>0fbad5882c0353007f44d4a82e04aa50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onBefore</sys_name>
+        <sys_package display_value="HHD" source="x_snc_hhd">9ff5cfbb2cbe13007f44d4a82e04aab3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HHD">9ff5cfbb2cbe13007f44d4a82e04aab3</sys_scope>
+        <sys_update_name>sys_transform_script_0fbad5882c0353007f44d4a82e04aa50</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-06-27 08:09:48</sys_updated_on>
+        <when>onBefore</when>
+    </sys_transform_script>
+</record_update>
